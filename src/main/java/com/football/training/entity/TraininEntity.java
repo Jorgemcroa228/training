@@ -1,5 +1,7 @@
 package com.football.training.entity;
 
+import com.football.training.enums.TrainingDay;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -19,6 +21,6 @@ public class TraininEntity {
   private long id_training;
 
   @Column(name = "training_day")
-  private  training_day;
+  private TrainingDay training_day;
   
 }

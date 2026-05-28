@@ -1,5 +1,7 @@
 package com.football.training.entity;
 
+import com.football.training.enums.UserRole;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -29,5 +31,5 @@ public class UserEntity {
   private String password;
   
   @Column(name = "role")
-  private long role;
+  private UserRole role;
 }
