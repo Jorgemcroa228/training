@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: training
+
+  datasource:
+    url: jdbc:mysql://localhost3306/football
+    username: root
+    password: 
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+    properties:
+      hibernate:
+        "[format_sql]": true
+
+server:
+  port: 8060
+  servlet:
+    context-path: /api/x1
+
+logging:
+  level:
+    "[org.springframework]": INFO
+
+security:
+  jwt:
+    secret-key: yTKVYJ3d+7O3tC30AXuxhOlqIAy14YGXJdt8F84k0bo=
+    token-expiration: 100000
