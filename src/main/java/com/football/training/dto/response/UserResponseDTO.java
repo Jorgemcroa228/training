@@ -17,7 +17,7 @@ import lombok.Setter;
 @Builder
 public class UserResponseDTO {
     
-    private long id_user;
+    private Long id_user;
     private String name;
     private String email;
     private String password;

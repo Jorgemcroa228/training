@@ -10,6 +10,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+// is necesary to see or ask to IA that @Column have everything good and sharing SQL and Entity too.
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
