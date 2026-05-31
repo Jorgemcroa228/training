@@ -4,6 +4,8 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 
+import com.football.training.config.PasswordConfig;
+import com.football.training.config.PasswordConfig;
 import com.football.training.dto.request.UserRequestDTO;
 import com.football.training.dto.response.DeleteUserResponseDTO;
 import com.football.training.dto.response.UserResponseDTO;
@@ -16,7 +18,7 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class UserService {
   private final UserRepository userRepository;
-  //private final PasswordEncoder;
+  private final PasswordConfig passwordConfig;
 
   public UserResponseDTO createUser(UserRequestDTO request){
 
