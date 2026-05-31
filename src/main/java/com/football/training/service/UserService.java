@@ -31,6 +31,12 @@ public class UserService {
     UserEntity saveUsers = userRepository.save(users);
     return toResponse(saveUsers);
 
+    public list<UserRequestDTO> listUser(){
+      return userRepository.findAll().stream().map(this:: toResponse).toList();
+    }
+
+    public UserResponseDTO 
+
     public UserResponseDTO toResponse(UserEntity users){
       return UserResponseDTO.builder()
             .id_user(users.getId_user())
